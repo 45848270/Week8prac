@@ -12,7 +12,7 @@ void OnTriggerEnter(Collider hit)
  if(hit.gameObject.tag.Equals("Player"))
         {
         Destroy(gameObject);
-      //ScoreKeeper.instance.AddScore();
+      ScoreKeeper.instance.AddScore();
 
         }
 
