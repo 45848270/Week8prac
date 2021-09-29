@@ -23,16 +23,6 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 
-void OnTriggerEnter(Collider hit)
-{
-
- if(hit.gameObject.tag.Equals("Coin"))
-        {
-        Destroy(hit.gameObject);
-        //Score.scoreValue += 10; // Score increases by 10
-      ScoreKeeper.instance.AddScore();
-
-        }
 
 
 
