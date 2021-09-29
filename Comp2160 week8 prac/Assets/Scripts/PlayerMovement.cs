@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+        public float playerSpeed = 5f; // metre per second
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,27 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float upDown = Input.GetAxis("Vertical");
+        float leftRight = Input.GetAxis("Horizontal");
+
+        transform.Translate(upDown * playerSpeed * Vector3.up * Time.deltaTime);       
+        transform.Translate(leftRight * playerSpeed * Vector3.right * Time.deltaTime);
     }
+}
+
+void OnTriggerEnter(Collider hit)
+{
+
+ if(hit.gameObject.tag.Equals("Coin"))
+        {
+        Destroy(hit.gameObject);
+        //Score.scoreValue += 10; // Score increases by 10
+      ScoreKeeper.instance.AddScore();
+
+        }
+
+
+
+
+
 }
