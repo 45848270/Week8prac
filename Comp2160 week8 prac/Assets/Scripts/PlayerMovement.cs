@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
         public float playerSpeed = 5f; // metre per second    
 
@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
         float upDown = Input.GetAxis("Vertical");
         float leftRight = Input.GetAxis("Horizontal");
 
-        transform.Translate(upDown * playerSpeed * Vector3.up * Time.deltaTime);       
+        transform.Translate(upDown * playerSpeed * Vector3.forward * Time.deltaTime);       
         transform.Translate(leftRight * playerSpeed * Vector3.right * Time.deltaTime);
     }
 }
