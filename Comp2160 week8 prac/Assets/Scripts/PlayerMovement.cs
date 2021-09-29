@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-        public float playerSpeed = 5f; // metre per second
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        public float playerSpeed = 5f; // metre per second    
 
     // Update is called once per frame
     void Update()
@@ -28,4 +22,4 @@ public class NewBehaviourScript : MonoBehaviour
 
 
 
-}
+
