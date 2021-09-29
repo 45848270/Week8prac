@@ -8,17 +8,19 @@ public class ScoreKeeper : MonoBehaviour
 
     public static ScoreKeeper instance;
     public int coinPoints = 10;
-    public int score = 0;
     public Text scoreText;
-   
+
+    public int score;
+
     public void Awake()
     {
         instance = this;
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = "Score: 0" + score.ToString();
     }
 
     public void AddScore()
     {
+        Debug.Log("Adding Score");
         score += coinPoints;
         scoreText.text= "Score: " + score.ToString();
     }
