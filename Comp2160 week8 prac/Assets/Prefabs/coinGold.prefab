@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3106215152817559415}
   - component: {fileID: 621364373476109616}
   - component: {fileID: -2876952692657781951}
+  - component: {fileID: -7499397970697442824}
   m_Layer: 0
   m_Name: coinGold
   m_TagString: Untagged
@@ -112,3 +113,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &-7499397970697442824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3466507590065714850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34641019, y: 0.39999998, z: 0.099999994}
+  m_Center: {x: 0, y: 0.19999999, z: 0}

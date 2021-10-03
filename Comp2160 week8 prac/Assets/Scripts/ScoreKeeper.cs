@@ -17,20 +17,20 @@ public class ScoreKeeper : MonoBehaviour
     public void Awake()
     {
         instance = this;
-        player1ScoreText.text = "Player1 Score: 0" + player1Score.ToString();
-        player2ScoreText.text = "Player2 Score: 0" + player2Score.ToString();
+        player1ScoreText.text = "P1 Score: 0" + player1Score.ToString();
+        player2ScoreText.text = "P2 Score: 0" + player2Score.ToString();
     }
 
     public void AddPlayer1Score()
     {
         Debug.Log("Adding Score To Player1");
         player1Score += coinPoints;
-        player1ScoreText.text= "Score: " + player1Score.ToString();
+        player1ScoreText.text= "P1 Score: " + player1Score.ToString();
     }
     public void AddPlayer2Score()
     {
         Debug.Log("Adding Score To Player2");
         player2Score += coinPoints;
-        player2ScoreText.text = "Score: " + player2Score.ToString();
+        player2ScoreText.text = "P2 Score: " + player2Score.ToString();
     }
 }
