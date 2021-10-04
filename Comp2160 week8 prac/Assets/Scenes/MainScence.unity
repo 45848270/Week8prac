@@ -528,14 +528,14 @@ RectTransform:
   m_GameObject: {fileID: 573814099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.6397605, y: 4.428113, z: 1}
+  m_LocalScale: {x: 3.33, y: 3.54, z: 1}
   m_Children: []
   m_Father: {fileID: 1137470462}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: 119}
+  m_AnchoredPosition: {x: 837, y: 119}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573814101
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -575,18 +575,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 99
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: 'Score: '
 --- !u!222 &573814103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1505,7 +1505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100016, guid: df38d25b6fd39b44eacfb4a2b784547c, type: 3}
       propertyPath: m_Name
-      value: basicCharacter
+      value: basicCharacter2
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: df38d25b6fd39b44eacfb4a2b784547c, type: 3}
       propertyPath: m_TagString
@@ -1627,9 +1627,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.05
-  m_Height: 0.34
+  m_Height: 0.18
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!54 &1249203787
 Rigidbody:
   m_ObjectHideFlags: 0
