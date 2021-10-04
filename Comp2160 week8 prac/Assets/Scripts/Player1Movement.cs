@@ -10,8 +10,8 @@ public class Player1Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float upDown = Input.GetAxis("Vertical2");
-        float leftRight = Input.GetAxis("Horizontal2");
+        float upDown = Input.GetAxis("Vertical");
+        float leftRight = Input.GetAxis("Horizontal");
 
         transform.Translate(upDown * playerSpeed * Vector3.forward * Time.deltaTime);       
         transform.Translate(leftRight * playerSpeed * Vector3.right * Time.deltaTime);
